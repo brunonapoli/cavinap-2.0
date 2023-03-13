@@ -1,17 +1,28 @@
 "use client";
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography'
 
-export default function About (){
-    return (
-        <div>
-            <h2>About</h2>
-            <Stack spacing={2} direction="row">
-                <Button variant="text" href='/'>Text</Button>
-                <Button variant="contained">Contained</Button>
-                <Button variant="outlined">Outlined</Button>
-            </Stack>
-        </div>
-        
-    );
-};
+
+export default function BasicGrid() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={8} sx={{border: '1px solid'}}>
+          <h2>Contáctenos</h2>
+        </Grid>
+        <Grid item xs={4} sx={{border: '1px solid'}}>
+          <h2>Contáctenos</h2>
+        </Grid>
+        <Grid item xs={4} sx={{border: '1px solid'}}>
+          <h2>Contáctenos</h2>
+        </Grid>
+        <Grid item xs={8} sx={{border: '1px solid'}}>
+          <h2>Contáctenos</h2>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+}
