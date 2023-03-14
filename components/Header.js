@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Header () {
@@ -14,7 +14,7 @@ export default function Header () {
                 <AppBar position="static" color='inherit'>
                 <Toolbar sx={{mt: 1}}>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml: 5 }}>
-                    <Link href = "/" underline="none" color = "inherit">
+                    <Link href = "/">
                         <Image src="/logo.png" alt='Foto' width="210" height="70" ml="60"/>
                     </Link>
                     </Typography>
