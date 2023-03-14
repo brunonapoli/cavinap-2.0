@@ -7,10 +7,8 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
-// import Link from '@mui/material/Link';
 import Link from 'next/link';
 import Image from 'next/image';
-
 
 export default function MainPage() {
   return (
