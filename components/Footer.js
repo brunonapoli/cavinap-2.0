@@ -9,7 +9,7 @@ export default function Footer () {
         <>
             <Box sx={{ width: '100%', position: 'fixed', bottom: '0' }}>
                 <BottomNavigation showLabels sx={{borderTop: '0.5px solid grey'}}>
-                    <Typography variant='h7' sx={{mt:2}}>
+                    <Typography variant='h7' sx={{mt:'18px'}}>
                     Copyright © 2023 Cavinap - All Rights Reserved
                     </Typography>
                 </BottomNavigation>
