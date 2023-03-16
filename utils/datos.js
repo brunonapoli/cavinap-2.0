@@ -94,10 +94,26 @@ const fusible = [
     35
 ];
 
+const color = [
+    "Negro", "Celeste", "Verde/Amarillo", "Marrón", "Rojo", "Blanco" 
+];
+
 const datos = [];
 
 for (let i = 0; i < 6; i++) {
-    datos.push[medidas[i], diametro[i], tipo[i], espesor[i], diametroExt[i], resistencia[i], corriente[i], peso[i], fusible[i]]
+    datos.push([
+        medidas[i], 
+        diametro[i], 
+        tipo[i], 
+        espesor[i], 
+        diametroExt[i], 
+        resistencia[i], 
+        corriente[i], 
+        peso[i], 
+        fusible[i]
+    ])
 }
 
-export {datos, titulos};
+console.log(datos)
+
+export {datos, titulos, medidas, color};
