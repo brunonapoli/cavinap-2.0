@@ -114,6 +114,4 @@ for (let i = 0; i < 6; i++) {
     ])
 }
 
-console.log(datos)
-
 export {datos, titulos, medidas, color};
