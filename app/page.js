@@ -10,7 +10,7 @@ import Paper from '@mui/material/Paper';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function MainPage() {
+export default function main() {
   return (
     <>
       <Box sx={{ flexGrow: 1, m:5}}>

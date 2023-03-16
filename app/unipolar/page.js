@@ -15,14 +15,14 @@ const medidas = [
 export default function  Unipolar() {
     return (
         <>
-        <Container maxWidth="md">
+        <Container maxWidth="md" sx={{mt:4}}>
             <TableContainer>
                 <Table>
-                    <TableHead>
+                    <TableHead sx={{backgroundColor: 'black'}}>
                         <TableRow>
                             {medidas.map((numero, index) => (
-                                <TableCell>
-                                    <Typography variant='h4'>
+                                <TableCell sx={{textAlign:'center'}}>
+                                    <Typography variant='h4' sx={{color: 'white'}}>
                                         {numero}
                                     </Typography>
                                 </TableCell>
