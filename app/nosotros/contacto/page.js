@@ -13,7 +13,7 @@ export default function contacto() {
                 <Grid container spacing={1}>
                     <Grid item xs={6}>
                         <Card>
-                            <CardContent  >
+                            <CardContent >
                                 <Stack direction='row' alignItems='center' gap={1}>
                                     <PhoneIcon sx={{ fontSize: 30 }} />
                                     <Typography variant='h5'> Teléfono:</Typography>
