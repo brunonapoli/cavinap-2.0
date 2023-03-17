@@ -38,21 +38,22 @@ export default function main() {
             </Link>
           </Grid>
           <Grid item xs={12}>
-            <Link href = "/calidad">
+            <Link href = "/nosotros/calidad">
               <Typography variant='h2'sx={{textAlign: 'center', border: '1px solid #ef5350'}}> Calidad </Typography>
             </Link>
           </Grid>
           <Grid item xs={6}>
+            <Link href= "/nosotros/contacto">
               <Typography variant='h2'sx={{textAlign: 'center', border: '1px solid #ef5350'}}> Contáctenos </Typography>
+            </Link>
           </Grid>
           <Grid item xs={6}>
-            <Link href = "/unipolar">
+            <Link href = "/nosotros/historia">
               <Typography variant='h2'sx={{textAlign: 'center', border: '1px solid #ef5350'}}> Nuestra historia </Typography>
             </Link>
           </Grid>
         </Grid>
       </Box>
-
     </>
   )
 }
