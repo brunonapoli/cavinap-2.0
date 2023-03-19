@@ -2,7 +2,7 @@
 
 import {Container, Typography} from '@mui/material';
 
-export default function  () {
+export default function  certificadoUnipolar() {
     return (
         <>
         <Container sx={{mt:3}}>
