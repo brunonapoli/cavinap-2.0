@@ -1,13 +1,27 @@
 "use client";
 
-import {Container, Typography} from '@mui/material';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Container, Typography, Stack } from '@mui/material';
 
-export default function  CertSubte() {
+export default function CertSubte() {
     return (
         <>
-        <Container sx={{mt:3}}>
-            <Typography variant='h3'sx={{mb:3, textAlign:'center', textDecoration: 'underline'}}> Unipolares </Typography>
-        </ Container>
+            <Container sx={{ mt: 3 }}>
+                <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}>
+                    Certificado Subterráneos
+                </Typography>
+                <Stack alignItems='center' sx={{ mb: 3 }}>
+                    <Link href='/_next/image?url=%2FcertificadoSubte.jpg&w=750&q=75'>
+                        <Image
+                            src="/certificadoSubte.jpg"
+                            alt='Foto del certificado del Subterráneo'
+                            width={660}
+                            height={902}
+                        />
+                    </Link>
+                </Stack>
+            </ Container>
         </>
     );
 };
