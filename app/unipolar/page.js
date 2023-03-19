@@ -9,7 +9,7 @@ import { Container, Typography, TableBody, Box } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 import CancelIcon from '@mui/icons-material/Cancel';
 
-import {datos, titulos, medidas, color} from '../../utils/datos';
+import {datos, titulos, medidas, color} from '../../utils/datosUni';
 
 export default function  unipolar() {
     return (
