@@ -34,7 +34,9 @@ export default function contacto() {
                         </Card>
                     </Grid>
                 </Grid>
-                <Typography variant='h5' sx={{ mb: 3, mt: 4, fontWeight: 'bold' }}>Lunes a Viernes de 09:00 hs. a 16:00 hs.</Typography>
+                <Typography variant='h5' sx={{ mb: 3, mt: 4, fontWeight: 'bold' }}>
+                    Lunes a Viernes - 08:30 hs. a 12:00 y 13:30 hs. a 16:00 hs.
+                </Typography>
             </ Container>
         </>
     );

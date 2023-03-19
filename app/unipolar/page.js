@@ -11,7 +11,7 @@ import CancelIcon from '@mui/icons-material/Cancel';
 
 import {datos, titulos, medidas, color} from '../../utils/datos';
 
-export default function  Unipolar() {
+export default function  unipolar() {
     return (
         <>
         <Container sx={{mt:3}}>
