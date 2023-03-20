@@ -16,10 +16,11 @@ export default function main() {
       <Box sx={{ flexGrow: 1, m:5}}>
         <Grid container spacing={3}>
           <Grid item xs={6}>
-            <Link href = "/unipolar">
-              <Typography variant='h2'sx={{textAlign: 'center', border: '1px solid #ef5350'}}>
+            <Link href = "/unipolar" sx={{border: '1px solid #ef5350'}}>
+              <Typography variant='h2'sx={{textAlign: 'center'}}>
                 Unipolares 
               </Typography>
+              <Typography variant='h5' sx={{textAlign: 'center'}}>Datos técnicos unipolares</Typography>
             </Link>
           </Grid>
           <Grid item xs={6}>

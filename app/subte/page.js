@@ -7,13 +7,11 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import { Container, Typography, TableBody, Box } from '@mui/material';
-import CheckIcon from '@mui/icons-material/Check';
-import CancelIcon from '@mui/icons-material/Cancel';
+import { Container, Typography, TableBody } from '@mui/material';
 
 export default function subte() {
     return (
-        <>
+        <div>
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Subterráneos </Typography>
                 <Typography variant='h7' paragraph>
@@ -29,7 +27,9 @@ export default function subte() {
                             <TableRow>
                                 {titulos.map((titulo) => (
                                     <TableCell align='center'>
-                                        <Typography variant='h8' color={'white'}> {titulo} </Typography>
+                                        <Typography variant='h8' color={'white'}> 
+                                        {titulo} 
+                                        </Typography>
                                     </TableCell>
                                 ))}
                             </TableRow>
@@ -38,7 +38,9 @@ export default function subte() {
                         <TableHead sx={{ backgroundColor: '#000010', border: '1px solid grey' }}>
                             <TableRow>
                                 <TableCell align='center' colSpan={titulos.length}>
-                                    <Typography variant='h7' color={'white'}> Bipolar </Typography>
+                                    <Typography variant='h7' color={'white'}> 
+                                    Bipolar 
+                                    </Typography>
                                 </TableCell>
                             </TableRow>
                         </TableHead>
@@ -57,7 +59,9 @@ export default function subte() {
                         <TableHead sx={{ backgroundColor: '#000010', border: '1px solid grey' }}>
                             <TableRow>
                                 <TableCell align='center' colSpan={titulos.length}>
-                                    <Typography variant='h7' color={'white'}> Tripolar </Typography>
+                                    <Typography variant='h7' color={'white'}> 
+                                    Tripolar 
+                                    </Typography>
                                 </TableCell>
                             </TableRow>
                         </TableHead>
@@ -76,7 +80,9 @@ export default function subte() {
                         <TableHead sx={{ backgroundColor: '#000010', border: '1px solid grey' }}>
                             <TableRow>
                                 <TableCell align='center' colSpan={titulos.length}>
-                                    <Typography variant='h7' color={'white'}> Tetrapolar </Typography>
+                                    <Typography variant='h7' color={'white'}> 
+                                    Tetrapolar 
+                                    </Typography>
                                 </TableCell>
                             </TableRow>
                         </TableHead>
@@ -91,10 +97,54 @@ export default function subte() {
                                 </TableRow>
                             ))}
                         </TableBody>
-
                     </Table>
                 </TableContainer>
+
+                <Table sx={{ mb: 3 }}>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell align='center' colSpan={3}>
+                                Colores de conductores aislantes
+                            </TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        <TableRow>
+                            <TableCell align='center'>
+                                Bipolar
+                            </TableCell>
+                            <TableCell align='center'>
+                                Fase + Neutro
+                            </TableCell>
+                            <TableCell align='center'>
+                                Marrón - Celeste
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell align='center'>
+                                Tripolar
+                            </TableCell>
+                            <TableCell align='center'>
+                                Tres fases
+                            </TableCell>
+                            <TableCell align='center'>
+                                Marrón - Negro - Rojo
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell align='center'>
+                                tetrapolar
+                            </TableCell>
+                            <TableCell align='center'>
+                                Tres fases + Neutro
+                            </TableCell>
+                            <TableCell align='center'>
+                                Marrón - Negro - Rojo - Celeste
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
             </ Container>
-        </>
+        </div>
     );
 };
