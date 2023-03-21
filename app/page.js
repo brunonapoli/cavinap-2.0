@@ -1,13 +1,9 @@
 "use client";
 
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import { Card, CardContent, Stack } from '@mui/material';
-import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
+import { Card, CardContent } from '@mui/material';
 import Link from 'next/link';
 
 export default function main() {
