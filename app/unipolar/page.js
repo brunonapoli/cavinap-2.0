@@ -78,16 +78,16 @@ export default function unipolar() {
                                 <TableRow>
                                     <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                         <Stack direction='row' alignItems='center' gap={1}>
-                                            <Avatar sx={{ color: 'red', bgcolor: 'red', width: 24, height: 24 }}>
+                                            <Avatar style={{border:'0.2px solid lightgray'}} sx={{ color: c[1], bgcolor: c[1], width: 24, height: 24}}>
                                                 <CircleIcon />
                                             </Avatar>
                                             <Typography variant='h6'>
-                                                {c}
+                                                {c[0]}
                                             </Typography>
                                         </Stack>
                                     </TableCell>
                                     {medidas.map((medida) => (
-                                        (c === "Blanco" && (medida === 4 || medida === 6 || medida === 10)) ?
+                                        (c[0] === "Blanco" && (medida === 4 || medida === 6 || medida === 10)) ?
                                             <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                                 <CancelIcon />
                                             </TableCell>
