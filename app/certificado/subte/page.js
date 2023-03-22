@@ -12,7 +12,7 @@ export default function CertSubte() {
                     Certificado Subterráneos
                 </Typography>
                 <Stack alignItems='center' sx={{ mb: 3 }}>
-                    <Link href='/_next/image?url=%2FcertificadoSubte.jpg&w=750&q=75'>
+                    <Link href='/_next/image?url=%2FcertificadoSubte.jpg&w=750&q=75' target={'blank'}>
                         <Image
                             src="/certificadoSubte.jpg"
                             alt='Foto del certificado del Subterráneo'

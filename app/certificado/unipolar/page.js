@@ -12,7 +12,7 @@ export default function certificadoUnipolar() {
                     Certificado Unipolares
                 </Typography>
                 <Stack alignItems='center'>
-                    <Link href='/_next/image?url=%2FcertificadoUnipolar.jpg&w=750&q=75'>
+                    <Link href='/_next/image?url=%2FcertificadoUnipolar.jpg&w=750&q=75' target={'blank'}>
                         <Image
                             src="/certificadoUnipolar.jpg"
                             alt='Foto del certificado del Unipolar'
