@@ -95,7 +95,12 @@ const fusible = [
 ];
 
 const color = [
-    "Negro", "Celeste", "Verde/Amarillo", "Marrón", "Rojo", "Blanco" 
+    ["Negro", "black"], 
+    ["Celeste", "#4DD9E5"], 
+    ["Verde/Amarillo", "#13F041"], 
+    ["Marrón", "#912900"], 
+    ["Rojo", "red"], 
+    ["Blanco", "white"] 
 ];
 
 const datos = [];
