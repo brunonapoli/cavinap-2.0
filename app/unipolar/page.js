@@ -12,12 +12,6 @@ import CircleIcon from '@mui/icons-material/Circle';
 
 import { datos, titulos, medidas, color } from '../../utils/datosUni';
 
-const avatarStyle = {
-    backgroundColor: "rgba(210,180,140,1)",
-    border: "2px solid blue",
-    boxShadow: 20
-};
-
 export default function unipolar() {
     return (
         <>
@@ -34,7 +28,7 @@ export default function unipolar() {
                         <TableHead sx={{ backgroundColor: 'black', border: '1px solid grey' }}>
                             <TableRow>
                                 {titulos.map((titulo, index) => (
-                                    <TableCell align='center'>
+                                    <TableCell align='center' key={index}>
                                         <Typography variant='h7' sx={{ color: 'white' }}>
                                             {titulo}
                                         </Typography>
@@ -44,7 +38,7 @@ export default function unipolar() {
                         </TableHead>
                         <TableBody>
                             {datos.map((dato, index) => (
-                                <TableRow>
+                                <TableRow key={index}>
                                     {dato.map((valor) => (
                                         <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                             <Typography variant='h7' sx={{ color: 'black' }}>
