@@ -10,8 +10,9 @@ export default function contacto() {
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Contacto </Typography>
                 <Typography variant='h5' sx={{ mb: 3 }}>Para mayor informacion nos puede contactar de las siguientes maneras:</Typography>
-                <Grid container spacing={1}>
-                    <Grid item xs={6}>
+                
+                <Grid container spacing={3} justifyContent='center'>
+                    <Grid item xs={12} md={5}>
                         <Card>
                             <CardContent >
                                 <Stack direction='row' alignItems='center' gap={1}>
@@ -22,7 +23,8 @@ export default function contacto() {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item xs={6}>
+
+                    <Grid item xs={12} md={5}>
                         <Card>
                             <CardContent>
                                 <Stack direction='row' alignItems='center' gap={1}>
