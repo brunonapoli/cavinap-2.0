@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from './components/Footer';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
@@ -91,6 +92,7 @@ export default function main() {
           </Grid>
         </Grid>
       </Box>
+      <Footer posicion={'static'}/>
     </>
   )
 }

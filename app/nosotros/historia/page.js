@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from '@/app/components/Footer';
 import { Container, Typography } from '@mui/material';
 
 export default function historia() {
@@ -55,6 +56,7 @@ export default function historia() {
                     Daniel y José Luis
                 </Typography>
             </ Container>
+            <Footer posicion={'static'}/>
         </>
     );
 };

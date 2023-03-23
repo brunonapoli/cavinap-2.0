@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from '@/app/components/Footer';
 import { Container, Typography } from '@mui/material';
 
 export default function calidad() {
@@ -38,6 +39,7 @@ export default function calidad() {
                     os medios necesarios para que puedan cumplir con las exigencias del mercado referente a la calidad.
                 </Typography>
             </ Container>
+            <Footer posicion={'static'}/>
         </>
     );
 };

@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from '@/app/components/Footer';
 import { Container, Typography, Grid, Stack, Card, CardContent } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -40,6 +41,7 @@ export default function contacto() {
                     Lunes a Viernes - 08:30 hs. a 12:00 y 13:30 hs. a 16:00 hs.
                 </Typography>
             </ Container>
+            <Footer posicion={'fixed'}/>
         </>
     );
 };

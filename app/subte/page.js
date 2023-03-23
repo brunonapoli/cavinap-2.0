@@ -2,6 +2,7 @@
 
 import { titulos, datosBipolar, datosTripolar, datosTetrapolar } from '@/utils/datosSub';
 
+import Footer from '../components/Footer';
 import Table from '@mui/material/Table';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
@@ -11,7 +12,7 @@ import { Container, Typography, TableBody } from '@mui/material';
 
 export default function subte() {
     return (
-        <div>
+        <>
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Subterráneos </Typography>
                 <Typography variant='h7' paragraph>
@@ -27,8 +28,8 @@ export default function subte() {
                             <TableRow>
                                 {titulos.map((titulo) => (
                                     <TableCell align='center'>
-                                        <Typography variant='h8' color={'white'}> 
-                                        {titulo} 
+                                        <Typography variant='h8' color={'white'}>
+                                            {titulo}
                                         </Typography>
                                     </TableCell>
                                 ))}
@@ -38,8 +39,8 @@ export default function subte() {
                         <TableHead sx={{ backgroundColor: '#000010', border: '1px solid grey' }}>
                             <TableRow>
                                 <TableCell align='center' colSpan={titulos.length}>
-                                    <Typography variant='h7' color={'white'}> 
-                                    Bipolar 
+                                    <Typography variant='h7' color={'white'}>
+                                        Bipolar
                                     </Typography>
                                 </TableCell>
                             </TableRow>
@@ -59,8 +60,8 @@ export default function subte() {
                         <TableHead sx={{ backgroundColor: '#000010', border: '1px solid grey' }}>
                             <TableRow>
                                 <TableCell align='center' colSpan={titulos.length}>
-                                    <Typography variant='h7' color={'white'}> 
-                                    Tripolar 
+                                    <Typography variant='h7' color={'white'}>
+                                        Tripolar
                                     </Typography>
                                 </TableCell>
                             </TableRow>
@@ -80,8 +81,8 @@ export default function subte() {
                         <TableHead sx={{ backgroundColor: '#000010', border: '1px solid grey' }}>
                             <TableRow>
                                 <TableCell align='center' colSpan={titulos.length}>
-                                    <Typography variant='h7' color={'white'}> 
-                                    Tetrapolar 
+                                    <Typography variant='h7' color={'white'}>
+                                        Tetrapolar
                                     </Typography>
                                 </TableCell>
                             </TableRow>
@@ -145,6 +146,7 @@ export default function subte() {
                     </TableBody>
                 </Table>
             </ Container>
-        </div>
+            <Footer posicion={'static'} />
+        </>
     );
 };

@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Typography, Stack } from '@mui/material';
+import Footer from '@/app/components/Footer';
 
 export default function CertSubte() {
     return (
@@ -22,6 +23,7 @@ export default function CertSubte() {
                     </Link>
                 </Stack>
             </ Container>
+            <Footer posicion={'static'}/>
         </>
     );
 };
