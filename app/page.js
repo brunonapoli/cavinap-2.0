@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import { Card, CardContent } from '@mui/material';
+import { Card, CardContent, CardMedia } from '@mui/material';
 import Link from 'next/link';
 
 export default function main() {
@@ -15,9 +15,10 @@ export default function main() {
           <Grid item xs={4}>
             <Link href="/unipolar">
               <Card>
+                <CardMedia component={'img'} height='90' image='/head1.gif' alt='Imagen'/>
                 <CardContent>
                   <Typography variant='h4' sx={{ textAlign: 'center' }}> Unipolares </Typography>
-                  <Typography variant='h6' sx={{ textAlign: 'center' }}>Datos técnicos unipolares</Typography>
+                  {/* <Typography variant='h6' sx={{ textAlign: 'center' }}>Datos técnicos unipolares</Typography> */}
                 </CardContent>
               </Card>
             </Link>

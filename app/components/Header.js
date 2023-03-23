@@ -13,7 +13,7 @@ export default function Header() {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="static" color='inherit'>
                     <Toolbar sx={{ mt: 1 }}>
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml: 5 }}>
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml: 2 }}>
                             <Link href="/">
                                 <Image src="/logo.png" alt='Foto' width="210" height="70" ml="60" />
                             </Link>
