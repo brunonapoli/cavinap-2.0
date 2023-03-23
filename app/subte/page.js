@@ -8,7 +8,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import { Container, Typography, TableBody } from '@mui/material';
+import { Container, Typography, TableBody, Box } from '@mui/material';
 
 export default function subte() {
     return (
@@ -49,7 +49,7 @@ export default function subte() {
                             {datosBipolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoBipolar) => (
-                                        <TableCell align='center'>
+                                        <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                             {datoBipolar}
                                         </TableCell>
                                     ))}
@@ -70,7 +70,7 @@ export default function subte() {
                             {datosTripolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoTripolar) => (
-                                        <TableCell align='center'>
+                                        <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                             {datoTripolar}
                                         </TableCell>
                                     ))}
@@ -91,7 +91,7 @@ export default function subte() {
                             {datosTetrapolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoTetrapolar) => (
-                                        <TableCell align='center'>
+                                        <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                             {datoTetrapolar}
                                         </TableCell>
                                     ))}
@@ -102,49 +102,72 @@ export default function subte() {
                 </TableContainer>
 
                 <Table sx={{ mb: 3 }}>
-                    <TableHead>
+                    <TableHead sx={{ backgroundColor: 'black', border: '1px solid grey' }}>
                         <TableRow>
-                            <TableCell align='center' colSpan={3}>
+                            <TableCell align='center' colSpan={3} sx={{ color: 'white' }}>
                                 Colores de conductores aislantes
                             </TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         <TableRow>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Bipolar
                             </TableCell>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Fase + Neutro
                             </TableCell>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Marrón - Celeste
                             </TableCell>
                         </TableRow>
                         <TableRow>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Tripolar
                             </TableCell>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Tres fases
                             </TableCell>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Marrón - Negro - Rojo
                             </TableCell>
                         </TableRow>
                         <TableRow>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 tetrapolar
                             </TableCell>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Tres fases + Neutro
                             </TableCell>
-                            <TableCell align='center'>
+                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Marrón - Negro - Rojo - Celeste
                             </TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>
+                <Box sx={{ mb: 3 }}>
+                    <Typography variant='h6' paragraph>
+                        - Apto para instalaciones al aire libre por su alta resistencia a los rayos UV.
+                    </Typography>
+                    <Typography variant='h6' paragraph>
+                        - Apto para ser enterrado o tendido sobre bandejas.
+                    </Typography>
+                    <Typography variant='h6' paragraph>
+                        - El color de la vaina es lila o violeta.
+                    </Typography>
+                    <Typography variant='h6' paragraph>
+                        - El PVC utilizado resiste la propagación de la llama ante un incendio. (Norma IRAM 2307)
+                    </Typography>
+                    <Typography variant='h6' paragraph>
+                        - El cobre utilizado responde a la norma IRAM NM 280.
+                    </Typography>
+                    <Typography variant='h6' paragraph>
+                        - El cable se encuentra marcado y señalizado en forma secuencial metro a metro.
+                    </Typography>
+                    <Typography variant='h6' paragraph>
+                        - Sello IRAM 2178 y de Seguridad Eléctrica.
+                    </Typography>
+                </Box>
             </ Container>
             <Footer posicion={'static'} />
         </>
