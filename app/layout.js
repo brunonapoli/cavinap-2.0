@@ -1,5 +1,6 @@
 import './globals.css';
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollTop';
 
 export const metadata = {
   title: 'Cavinap',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
         <>
           <Header />
           {children}
+          <ScrollToTop />
         </>
         </body>
     </html>

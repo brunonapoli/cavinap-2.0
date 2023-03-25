@@ -10,7 +10,7 @@ import Image from 'next/image';
 export default function Header() {
     return (
         <>
-            <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{ flexGrow: 1 }} id="back-to-top-anchor">
                 <AppBar position="static" color='inherit'>
                     <Toolbar sx={{ mt: 1 }}>
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml: 2 }}>
