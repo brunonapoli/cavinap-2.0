@@ -26,8 +26,8 @@ export default function subte() {
 
                         <TableHead sx={{ backgroundColor: 'black', border: '1px solid grey' }}>
                             <TableRow>
-                                {titulos.map((titulo) => (
-                                    <TableCell align='center'>
+                                {titulos.map((titulo, index) => (
+                                    <TableCell align='center' key={index}>
                                         <Typography variant='h8' color={'white'}>
                                             {titulo}
                                         </Typography>
@@ -48,8 +48,8 @@ export default function subte() {
                         <TableBody>
                             {datosBipolar.map((datos) => (
                                 <TableRow>
-                                    {datos.map((datoBipolar) => (
-                                        <TableCell align='center' sx={{ border: '1px solid grey' }}>
+                                    {datos.map((datoBipolar, index) => (
+                                        <TableCell align='center' sx={{ border: '1px solid grey' }} key={index}>
                                             {datoBipolar}
                                         </TableCell>
                                     ))}
@@ -69,8 +69,8 @@ export default function subte() {
                         <TableBody>
                             {datosTripolar.map((datos) => (
                                 <TableRow>
-                                    {datos.map((datoTripolar) => (
-                                        <TableCell align='center' sx={{ border: '1px solid grey' }}>
+                                    {datos.map((datoTripolar, index) => (
+                                        <TableCell align='center' sx={{ border: '1px solid grey' }} key={index}>
                                             {datoTripolar}
                                         </TableCell>
                                     ))}
@@ -90,8 +90,8 @@ export default function subte() {
                         <TableBody>
                             {datosTetrapolar.map((datos) => (
                                 <TableRow>
-                                    {datos.map((datoTetrapolar) => (
-                                        <TableCell align='center' sx={{ border: '1px solid grey' }}>
+                                    {datos.map((datoTetrapolar, index) => (
+                                        <TableCell align='center' sx={{ border: '1px solid grey' }} key={index}>
                                             {datoTetrapolar}
                                         </TableCell>
                                     ))}
