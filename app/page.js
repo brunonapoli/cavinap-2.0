@@ -12,7 +12,7 @@ export default function main() {
     <>
       <Box sx={{ flexGrow: 1, m: 4 }}>
         <Grid container spacing={2} justifyContent='center'>
-          <Grid item xs={4}>
+          <Grid item xs={9} md={4}>
             <Link href="/unipolar">
               <Card>
                 <CardMedia component={'img'} height='90' image='/head1.gif' alt='Imagen'/>
@@ -24,12 +24,13 @@ export default function main() {
             </Link>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={9} md={4}>
             <Link href="/subte">
               <Card>
+              <CardMedia component={'img'} height='90' image='/head4.gif' alt='Imagen'/>
                 <CardContent>
                   <Typography variant='h4' sx={{ textAlign: 'center' }}> Subterráneos </Typography>
-                  <Typography variant='h6' sx={{ textAlign: 'center' }}>Datos técnicos subterráneos</Typography>
+                  {/* <Typography variant='h6' sx={{ textAlign: 'center' }}>Datos técnicos subterráneos</Typography> */}
                 </CardContent>
               </Card>
             </Link>
@@ -37,7 +38,7 @@ export default function main() {
         </ Grid>
 
         <Grid container spacing={2} justifyContent='center' sx={{mt:1}}>
-          <Grid item xs={4}>
+          <Grid item xs={9} md={4}>
             <Link href="/certificado/unipolar">
               <Card>
                 <CardContent>
@@ -47,7 +48,7 @@ export default function main() {
               </Card>
             </Link>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={9} md={4}>
             <Link href="/certificado/subte">
               <Card>
                 <CardContent>
@@ -59,19 +60,20 @@ export default function main() {
           </Grid>
         </Grid>
         <Grid container spacing={2} justifyContent='center' sx={{mt:1}}>
-          <Grid item xs={8}>
+          <Grid item xs={9} md={8}>
             <Link href="/nosotros/calidad">
               <Card>
+              <CardMedia component={'img'} height='60' image='/head5.gif' alt='Imagen'/>
                 <CardContent>
                   <Typography variant='h4' sx={{ textAlign: 'center' }}> Calidad </Typography>
-                  <Typography variant='h6' sx={{ textAlign: 'center' }}>Significado de calidad en Cavinap</Typography>
+                  {/* <Typography variant='h6' sx={{ textAlign: 'center' }}>Significado de calidad en Cavinap</Typography> */}
                 </CardContent>
               </Card>
             </Link>
           </Grid>
         </Grid>
         <Grid container spacing={2} justifyContent='center' sx={{mt:1}}>
-          <Grid item xs={4}>
+          <Grid item xs={9} md={4}>
             <Link href="/nosotros/contacto">
               <Card>
                 <CardContent>
@@ -81,7 +83,7 @@ export default function main() {
               </Card>
             </Link>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={9} md={4}>
             <Link href="/nosotros/historia">
               <Card>
                 <CardContent>
