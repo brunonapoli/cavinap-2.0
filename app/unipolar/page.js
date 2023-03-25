@@ -42,15 +42,17 @@ export default function unipolar() {
                                 <TableRow key={index}>
                                     {dato.map((valor) => (
                                         <TableCell align='center' sx={{ border: '1px solid grey' }}>
-                                            <Typography variant='h7' sx={{ color: 'black' }}>
-                                                {valor}
-                                            </Typography>
+                                            {/* <Typography variant='h7' sx={{ color: 'black' }}> */}
+                                            {valor}
+                                            {/* </Typography> */}
                                         </TableCell>
                                     ))}
                                 </TableRow>
                             ))}
                         </TableBody>
                     </Table>
+                </TableContainer>
+                <TableContainer>
                     <Table sx={{ mt: 4, mb: 4 }}>
                         <TableHead sx={{ backgroundColor: 'black' }}>
                             <TableRow>
@@ -73,7 +75,7 @@ export default function unipolar() {
                                 <TableRow>
                                     <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                         <Stack direction='row' alignItems='center' gap={1}>
-                                            <Avatar style={{border:'0.2px solid lightgray'}} sx={{ color: c[1], bgcolor: c[1], width: 24, height: 24}}>
+                                            <Avatar style={{ border: '0.2px solid lightgray' }} sx={{ color: c[1], bgcolor: c[1], width: 24, height: 24 }}>
                                                 <CircleIcon />
                                             </Avatar>
                                             <Typography variant='h6'>
@@ -119,7 +121,7 @@ export default function unipolar() {
                     </Typography>
                 </Box>
             </Container>
-            <Footer posicion={'static'}/>
+            <Footer posicion={'static'} />
         </>
     );
 };
