@@ -53,7 +53,7 @@ export default function ScrollToTop(props) {
     <>
       <ScrollTop {...props}>
         <ThemeProvider theme={theme}>
-          <IconButton sx={{ backgroundColor:'#ef5350',height: 50, width: 50 }}>
+          <IconButton disableRipple sx={{ backgroundColor:'purple',height: 50, width: 50 }}>
             <KeyboardArrowUpIcon sx={{color:'#fff', height: 50, width: 50 }} />
           </IconButton>
         </ThemeProvider>
