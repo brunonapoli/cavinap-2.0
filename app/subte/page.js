@@ -45,7 +45,7 @@ export default function subte() {
                                 </TableCell>
                             </TableRow>
                         </TableHead>
-                        <TableBody>
+                        <TableBody sx={{backgroundColor:'white'}}>
                             {datosBipolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoBipolar, index) => (
@@ -66,7 +66,7 @@ export default function subte() {
                                 </TableCell>
                             </TableRow>
                         </TableHead>
-                        <TableBody>
+                        <TableBody sx={{backgroundColor:'white'}}>
                             {datosTripolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoTripolar, index) => (
@@ -87,7 +87,7 @@ export default function subte() {
                                 </TableCell>
                             </TableRow>
                         </TableHead>
-                        <TableBody>
+                        <TableBody sx={{backgroundColor:'white'}}>
                             {datosTetrapolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoTetrapolar, index) => (
@@ -109,7 +109,7 @@ export default function subte() {
                             </TableCell>
                         </TableRow>
                     </TableHead>
-                    <TableBody>
+                    <TableBody sx={{backgroundColor:'white'}}>
                         <TableRow>
                             <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Bipolar

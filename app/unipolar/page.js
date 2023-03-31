@@ -41,7 +41,7 @@ export default function unipolar() {
                             {datos.map((dato, index) => (
                                 <TableRow key={index}>
                                     {dato.map((valor) => (
-                                        <TableCell align='center' sx={{ border: '1px solid grey' }}>
+                                        <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor:'white' }}>
                                             {/* <Typography variant='h7' sx={{ color: 'black' }}> */}
                                             {valor}
                                             {/* </Typography> */}
@@ -73,7 +73,7 @@ export default function unipolar() {
                         <TableBody>
                             {color.map((c) => (
                                 <TableRow>
-                                    <TableCell align='center' sx={{ border: '1px solid grey' }}>
+                                    <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor:'white' }}>
                                         <Stack direction='row' alignItems='center' gap={1}>
                                             <Avatar style={{ border: '0.2px solid lightgray' }} sx={{ color: c[1], bgcolor: c[1], width: 24, height: 24 }}>
                                                 <CircleIcon />
@@ -85,10 +85,10 @@ export default function unipolar() {
                                     </TableCell>
                                     {medidas.map((medida) => (
                                         (c[0] === "Blanco" && (medida === 4 || medida === 6 || medida === 10)) ?
-                                            <TableCell align='center' sx={{ border: '1px solid grey' }}>
+                                            <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor:'white' }}>
                                                 <CancelIcon />
                                             </TableCell>
-                                            : <TableCell align='center' sx={{ border: '1px solid grey' }}>
+                                            : <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor:'white' }}>
                                                 <CheckIcon />
                                             </TableCell>
                                     ))}
