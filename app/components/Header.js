@@ -18,7 +18,7 @@ export default function Header() {
                                 <Image src="/logo.png" alt='Foto' width="210" height="70" ml="60" />
                             </Link>
                         </Typography>
-                        <Typography variant='h5' sx={{ mr: 6 }}>
+                        <Typography variant='h5' sx={{ mr: 2, ml:5 }}>
                             Fábrica de conductores eléctricos
                         </Typography>
                     </Toolbar>
