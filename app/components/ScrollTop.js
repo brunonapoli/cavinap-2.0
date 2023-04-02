@@ -40,7 +40,7 @@ function ScrollTop(props) {
       <Box
         onClick={handleClick}
         role="presentation"
-        sx={{ position: 'fixed', bottom: 80, right: 100 }}
+        sx={{ position: 'fixed', bottom: 80, right: 30 }}
       >
         {children}
       </Box>
@@ -53,8 +53,8 @@ export default function ScrollToTop(props) {
     <>
       <ScrollTop {...props}>
         <ThemeProvider theme={theme}>
-          <IconButton disableRipple sx={{ backgroundColor:'purple',height: 50, width: 50 }}>
-            <KeyboardArrowUpIcon sx={{color:'#fff', height: 50, width: 50 }} />
+          <IconButton disableRipple sx={{ backgroundColor:'#C1130C',height: 40, width: 40 }}>
+            <KeyboardArrowUpIcon sx={{color:'#fff', height: 40, width: 40 }} />
           </IconButton>
         </ThemeProvider>
       </ScrollTop>
