@@ -12,7 +12,7 @@ export default function certificadoUnipolar() {
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}>
                     Certificado Unipolares
                 </Typography>
-                <Stack alignItems='center'>
+                <Stack alignItems='center' sx={{ mb: 3 }}>
                     <Link href='/_next/image?url=%2FcertificadoUnipolar.jpg&w=750&q=75' target={'blank'}>
                         <Image
                             src="/certificadoUnipolar.jpg"
