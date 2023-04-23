@@ -4,10 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Typography, Stack } from '@mui/material';
 import Footer from '@/app/components/Footer';
+import Bar from '@/app/components/Bar';
 
 export default function certificadoUnipolar() {
     return (
         <>
+            <Bar posicion={3} />
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}>
                     Certificado Unipolares
@@ -23,7 +25,7 @@ export default function certificadoUnipolar() {
                     </Link>
                 </Stack>
             </ Container>
-            <Footer posicion={'static'}/>
+            <Footer posicion={'static'} />
         </>
     );
 };

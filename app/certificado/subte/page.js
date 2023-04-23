@@ -4,10 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Typography, Stack } from '@mui/material';
 import Footer from '@/app/components/Footer';
+import Bar from '@/app/components/Bar';
 
 export default function CertSubte() {
     return (
         <>
+            <Bar posicion={4} />
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}>
                     Certificado Subterráneos
@@ -23,7 +25,7 @@ export default function CertSubte() {
                     </Link>
                 </Stack>
             </ Container>
-            <Footer posicion={'static'}/>
+            <Footer posicion={'static'} />
         </>
     );
 };

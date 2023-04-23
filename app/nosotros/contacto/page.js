@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from '@/app/components/Footer';
+import Bar from '@/app/components/Bar';
 import { Container, Typography, Grid, Stack, Card, CardContent } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -8,10 +9,11 @@ import EmailIcon from '@mui/icons-material/Email';
 export default function contacto() {
     return (
         <>
+            <Bar posicion={6} />
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Contacto </Typography>
                 <Typography variant='h5' sx={{ mb: 3 }}>Para mayor informacion nos puede contactar de las siguientes maneras:</Typography>
-                
+
                 <Grid container spacing={3} justifyContent='center'>
                     <Grid item xs={12} md={5}>
                         <Card>
@@ -41,7 +43,7 @@ export default function contacto() {
                     Lunes a Viernes - 08:30 hs. a 12:00 y 13:30 hs. a 16:00 hs.
                 </Typography>
             </ Container>
-            <Footer posicion={'fixed'}/>
+            <Footer posicion={'fixed'} />
         </>
     );
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from '../components/Footer';
+import Bar from '../components/Bar';
 import Table from '@mui/material/Table';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
@@ -16,6 +17,7 @@ import { datos, titulos, medidas, color } from '../../utils/datosUni';
 export default function unipolar() {
     return (
         <>
+            <Bar posicion={1} />
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Unipolares </Typography>
                 <Typography variant='h7' paragraph>
@@ -41,7 +43,7 @@ export default function unipolar() {
                             {datos.map((dato, index) => (
                                 <TableRow key={index}>
                                     {dato.map((valor) => (
-                                        <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor:'white' }}>
+                                        <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }}>
                                             {/* <Typography variant='h7' sx={{ color: 'black' }}> */}
                                             {valor}
                                             {/* </Typography> */}
@@ -73,7 +75,7 @@ export default function unipolar() {
                         <TableBody>
                             {color.map((c) => (
                                 <TableRow>
-                                    <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor:'white' }}>
+                                    <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }}>
                                         <Stack direction='row' alignItems='center' gap={1}>
                                             <Avatar style={{ border: '0.2px solid lightgray' }} sx={{ color: c[1], bgcolor: c[1], width: 24, height: 24 }}>
                                                 <CircleIcon />
@@ -85,10 +87,10 @@ export default function unipolar() {
                                     </TableCell>
                                     {medidas.map((medida) => (
                                         (c[0] === "Blanco" && (medida === 4 || medida === 6 || medida === 10)) ?
-                                            <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor:'white' }}>
+                                            <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }}>
                                                 <CancelIcon />
                                             </TableCell>
-                                            : <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor:'white' }}>
+                                            : <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }}>
                                                 <CheckIcon />
                                             </TableCell>
                                     ))}

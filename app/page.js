@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from './components/Footer';
+import Bar from './components/Bar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
@@ -10,6 +11,7 @@ import Link from 'next/link';
 export default function main() {
   return (
     <>
+      <Bar posicion={0} />
       <Box sx={{ flexGrow: 1, m: 4 }}>
         <Grid container spacing={2} justifyContent='center'>
           <Grid item xs={9} md={4}>

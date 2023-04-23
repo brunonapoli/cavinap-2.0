@@ -3,6 +3,7 @@
 import { titulos, datosBipolar, datosTripolar, datosTetrapolar } from '@/utils/datosSub';
 
 import Footer from '../components/Footer';
+import Bar from '../components/Bar';
 import Table from '@mui/material/Table';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
@@ -13,6 +14,7 @@ import { Container, Typography, TableBody, Box } from '@mui/material';
 export default function subte() {
     return (
         <>
+            <Bar posicion={2} />
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Subterráneos </Typography>
                 <Typography variant='h7' paragraph>
@@ -45,7 +47,7 @@ export default function subte() {
                                 </TableCell>
                             </TableRow>
                         </TableHead>
-                        <TableBody sx={{backgroundColor:'white'}}>
+                        <TableBody sx={{ backgroundColor: 'white' }}>
                             {datosBipolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoBipolar, index) => (
@@ -66,7 +68,7 @@ export default function subte() {
                                 </TableCell>
                             </TableRow>
                         </TableHead>
-                        <TableBody sx={{backgroundColor:'white'}}>
+                        <TableBody sx={{ backgroundColor: 'white' }}>
                             {datosTripolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoTripolar, index) => (
@@ -87,7 +89,7 @@ export default function subte() {
                                 </TableCell>
                             </TableRow>
                         </TableHead>
-                        <TableBody sx={{backgroundColor:'white'}}>
+                        <TableBody sx={{ backgroundColor: 'white' }}>
                             {datosTetrapolar.map((datos) => (
                                 <TableRow>
                                     {datos.map((datoTetrapolar, index) => (
@@ -109,7 +111,7 @@ export default function subte() {
                             </TableCell>
                         </TableRow>
                     </TableHead>
-                    <TableBody sx={{backgroundColor:'white'}}>
+                    <TableBody sx={{ backgroundColor: 'white' }}>
                         <TableRow>
                             <TableCell align='center' sx={{ border: '1px solid grey' }}>
                                 Bipolar
