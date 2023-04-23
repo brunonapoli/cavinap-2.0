@@ -5,6 +5,7 @@ import Link from 'next/link';
 import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { Box } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -42,6 +43,8 @@ export default function Bar({posicion}) {
         <>
             <ThemeProvider theme={theme}>
                 <AppBar position="static">
+                    {/* <Box display='flex' justifyContent={'center'} width={'100%'}> */}
+                        {/* <Box> */}
                     <Tabs
                         // value={value}
                         value={posicion}
@@ -49,7 +52,9 @@ export default function Bar({posicion}) {
                         indicatorColor="secondary"
                         // textColor="secondary"
                         textColor="inherit"
-                        variant="fullWidth"
+                        // variant="scrollable"
+                        scrollButtons='auto'
+                        variant='fullWidth'
                         aria-label="full width tabs example"
                     >
                         <LinkTab label="Inicio" href="#" />
@@ -61,6 +66,8 @@ export default function Bar({posicion}) {
                         <LinkTab label="Contacto" href="/nosotros/contacto" />
                         <LinkTab label="Nuestra historia" href="/nosotros/historia" />
                     </Tabs>
+
+                    {/* </Box> */}
                 </AppBar>
             </ThemeProvider>
         </>
