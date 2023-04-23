@@ -31,7 +31,7 @@ function LinkTab(props) {
     );
 }
 
-export default function Bar() {
+export default function Bar({posicion}) {
     const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
@@ -43,14 +43,16 @@ export default function Bar() {
             <ThemeProvider theme={theme}>
                 <AppBar position="static">
                     <Tabs
-                        value={value}
-                        onChange={handleChange}
+                        // value={value}
+                        value={posicion}
+                        // onChange={handleChange}
                         indicatorColor="secondary"
                         // textColor="secondary"
                         textColor="inherit"
                         variant="fullWidth"
                         aria-label="full width tabs example"
                     >
+                        <LinkTab label="Inicio" href="#" />
                         <LinkTab label="Unipolares" href="/unipolar" />
                         <LinkTab label="Subterráneos" href="/subte" />
                         <LinkTab label="Certificado Unipolares" href="/certificado/unipolar" />
