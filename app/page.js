@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import { Card, CardContent, CardMedia, Avatar, Stack } from '@mui/material';
 import Link from 'next/link';
 
-export default function main() {
+export default function Main() {
   return (
     <>
       <Bar posicion={0} />
