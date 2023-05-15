@@ -7,10 +7,12 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import Tooltip from '@mui/material/Tooltip';
 import { Container, Typography, TableBody, Box, Avatar, Stack } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 import CancelIcon from '@mui/icons-material/Cancel';
 import CircleIcon from '@mui/icons-material/Circle';
+import InfoIcon from '@mui/icons-material/Info';
 
 import { datos, titulos, medidas, color } from '../../utils/datosUni';
 
@@ -31,19 +33,30 @@ export default function unipolar() {
                         <TableHead sx={{ backgroundColor: 'black', border: '1px solid grey' }}>
                             <TableRow>
                                 {titulos.map((titulo, index) => (
-                                    <TableCell align='center' key={index}>
-                                        <Typography variant='h7' sx={{ color: 'white' }}>
-                                            {titulo}
-                                        </Typography>
-                                    </TableCell>
+                                    (index == 6) ?
+                                        <TableCell align='center' key={index}>
+                                            <Typography variant='h7' sx={{ color: 'white' }}>
+                                                {titulo}
+                                                <Tooltip title="Corriente máxima admisible por conductor para cables instalados en cañerías 
+                                                a temperatura ambiente de 40º c (hasta 3 conductores).">
+                                                    <InfoIcon sx={{ fontSize: 15 }} />
+                                                </Tooltip>
+                                            </Typography>
+                                        </TableCell>
+                                        :
+                                        <TableCell align='center' key={index}>
+                                            <Typography variant='h7' sx={{ color: 'white' }}>
+                                                {titulo}
+                                            </Typography>
+                                        </TableCell>
                                 ))}
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             {datos.map((dato, index) => (
                                 <TableRow key={index}>
-                                    {dato.map((valor) => (
-                                        <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }}>
+                                    {dato.map((valor, i2) => (
+                                        <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }} key={i2}>
                                             {/* <Typography variant='h7' sx={{ color: 'black' }}> */}
                                             {valor}
                                             {/* </Typography> */}
@@ -63,8 +76,8 @@ export default function unipolar() {
                                         Colores
                                     </Typography>
                                 </TableCell>
-                                {medidas.map((medida) => (
-                                    <TableCell align='center'>
+                                {medidas.map((medida, index) => (
+                                    <TableCell align='center' key={index}>
                                         <Typography variant='h6' sx={{ color: 'white' }}>
                                             {medida}
                                         </Typography>
@@ -73,8 +86,8 @@ export default function unipolar() {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {color.map((c) => (
-                                <TableRow>
+                            {color.map((c, index) => (
+                                <TableRow key={index}>
                                     <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }}>
                                         <Stack direction='row' alignItems='center' gap={1}>
                                             <Avatar style={{ border: '0.2px solid lightgray' }} sx={{ color: c[1], bgcolor: c[1], width: 24, height: 24 }}>
@@ -85,12 +98,12 @@ export default function unipolar() {
                                             </Typography>
                                         </Stack>
                                     </TableCell>
-                                    {medidas.map((medida) => (
+                                    {medidas.map((medida, index) => (
                                         (c[0] === "Blanco" && (medida === 4 || medida === 6 || medida === 10)) ?
-                                            <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }}>
+                                            <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }} key={index}>
                                                 <CancelIcon />
                                             </TableCell>
-                                            : <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }}>
+                                            : <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }} key={index}>
                                                 <CheckIcon />
                                             </TableCell>
                                     ))}
