@@ -9,7 +9,7 @@ const titulos = [
     "Espesor Nominal aislación (mm)",
     "Diámetro exterior aproximado (mm)",
     "Resistencia eléctrica máxima a 20°C (Ω/Km.)(Amper)",
-    "Corriente máxima admisible (1)(Amper)",
+    "Corriente máxima admisible (Amper) ",
     "Peso aproximado (Kg. x Km.)",
     "Fusible NH a emplear (Amper)" 
 ];
