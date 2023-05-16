@@ -37,9 +37,10 @@ export default function unipolar() {
                                         <TableCell align='center' key={index}>
                                             <Typography variant='h7' sx={{ color: 'white' }}>
                                                 {titulo}
-                                                <Tooltip title="Corriente máxima admisible por conductor para cables instalados en cañerías 
-                                                a temperatura ambiente de 40º c (hasta 3 conductores).">
-                                                    <InfoIcon sx={{ fontSize: 15 }} />
+                                                <Tooltip 
+                                                    title={<Typography fontSize={15}>"Corriente máxima admisible por conductor para cables instalados en cañerías a temperatura ambiente de 40ºC (hasta 3 conductores)."</Typography>} 
+                                                    leaveDelay={500}>
+                                                        <InfoIcon sx={{ fontSize: 15 }} />
                                                 </Tooltip>
                                             </Typography>
                                         </TableCell>
