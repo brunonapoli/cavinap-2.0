@@ -19,7 +19,7 @@ import { datos, titulos, medidas, color } from '../../utils/datosUni';
 export default function unipolar() {
     return (
         <>
-            <Bar posicion={1} posicionTabIndicator={64 * 2}/>
+            <Bar posicion={1} posicionTabIndicator={64 * 2} />
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Unipolares </Typography>
                 <Typography variant='h7' paragraph>
@@ -37,10 +37,10 @@ export default function unipolar() {
                                         <TableCell align='center' key={index}>
                                             <Typography variant='h7' sx={{ color: 'white' }}>
                                                 {titulo}
-                                                <Tooltip 
-                                                    title={<Typography fontSize={15}>"Corriente máxima admisible por conductor para cables instalados en cañerías a temperatura ambiente de 40ºC (hasta 3 conductores)."</Typography>} 
+                                                <Tooltip
+                                                    title={<Typography fontSize={15}>"Corriente máxima admisible por conductor para cables instalados en cañerías a temperatura ambiente de 40ºC (hasta 3 conductores)."</Typography>}
                                                     leaveDelay={500}>
-                                                        <InfoIcon sx={{ fontSize: 15 }} />
+                                                    <InfoIcon sx={{ fontSize: 15 }} />
                                                 </Tooltip>
                                             </Typography>
                                         </TableCell>
@@ -57,11 +57,16 @@ export default function unipolar() {
                             {datos.map((dato, index) => (
                                 <TableRow key={index}>
                                     {dato.map((valor, i2) => (
-                                        <TableCell align='center' sx={{ border: '1px solid grey', backgroundColor: 'white' }} key={i2}>
-                                            {/* <Typography variant='h7' sx={{ color: 'black' }}> */}
-                                            {valor}
-                                            {/* </Typography> */}
-                                        </TableCell>
+                                        (i2 == 0 && dato[i2] == 0.75 || i2 == 0 && dato[i2] == 1.00 || i2 == 0 && dato[i2] == 1.50 ||
+                                            i2 == 0 && dato[i2] == 2.50 || i2 == 0 && dato[i2] == 4 || i2 == 0 && dato[i2] == 6 ||
+                                            i2 == 0 && dato[i2] == 10) ?
+                                            <TableCell align='center' sx={{ fontSize: '1.4rem', border: '1px solid grey', backgroundColor: 'white', fontWeight: 'bold' }} key={i2}>
+                                                {valor}
+                                            </TableCell>
+                                            :
+                                            <TableCell align='center' sx={{ fontSize: '1.2rem', border: '1px solid grey', backgroundColor: 'white' }} key={i2}>
+                                                {valor}
+                                            </TableCell>
                                     ))}
                                 </TableRow>
                             ))}
