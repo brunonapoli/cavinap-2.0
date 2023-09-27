@@ -11,7 +11,7 @@ import Link from 'next/link';
 export default function Main() {
   return (
     <>
-      <Bar posicion={0} />
+      <Bar posicion={0} posicionTabIndicator={64} />
       <Box sx={{ flexGrow: 1, m: 4 }}>
         <Grid container spacing={2} justifyContent='center'>
           <Grid item xs={9} md={4}>
@@ -43,8 +43,13 @@ export default function Main() {
               <Card>
                 <CardContent>
                   <Stack direction='row' alignItems='center' justifyContent='center' gap={1}>
-                    <Avatar alt="Certificado" src='/iram.jpg' sx={{ width: 60, height: 60 }} />
-                    <Typography variant='h4' sx={{ textAlign: 'center' }}> Cert. Unipolares </Typography>
+                    <Avatar alt="Certificado" src='/iram.jpg' 
+                      sx={{ width: {xs: 40, sm: 60}, height: {xs: 40, sm: 60} }} 
+                    />
+                    <Typography variant='h4' 
+                      sx={{ textAlign: 'center', fontSize: {xs: '1.65rem', sm: '2.125rem'} }}> 
+                      Cert. Unipolares 
+                    </Typography>
                   </Stack>
                 </CardContent>
               </Card>
@@ -55,8 +60,13 @@ export default function Main() {
               <Card>
                 <CardContent>
                   <Stack direction='row' alignItems='center' justifyContent='center' gap={1}>
-                    <Avatar alt="Certificado" src='/iram.jpg' sx={{ width: 60, height: 60 }} />
-                    <Typography variant='h4' sx={{ textAlign: 'center' }}> Cert. Subterráneos </Typography>
+                    <Avatar alt="Certificado" src='/iram.jpg' 
+                      sx={{ width: {xs: 40, sm: 60}, height: {xs: 40, sm: 60} }} 
+                    />
+                    <Typography variant='h4' 
+                      sx={{ textAlign: 'center', fontSize: {xs: '1.65rem', sm: '2.125rem'} }}> 
+                      Cert. Subterráneo
+                    </Typography>
                   </Stack>
                 </CardContent>
               </Card>
@@ -68,8 +78,11 @@ export default function Main() {
             <Link href="/nosotros/calidad">
               <Card>
                 <CardContent>
-                  <Typography variant='h4' sx={{ textAlign: 'center' }}> Calidad </Typography>
-                  <Typography variant='h6' sx={{ textAlign: 'center' }}>Significado de calidad en Cavinap</Typography>
+                  <Stack direction='row' alignItems='center' justifyContent='center' gap={1}>
+                    <Avatar alt="Certificado" src='/calidad.png' sx={{ width: 40, height: 40 }} />
+                      {/* <Typography variant='h4' sx={{ textAlign: 'center' }}> ¿Qué definimos como Calidad en Cavinap? </Typography> */}
+                      <Typography variant='h4' sx={{ textAlign: 'center' }}> Calidad </Typography>
+                  </Stack>
                 </CardContent>
               </Card>
             </Link>
@@ -81,7 +94,7 @@ export default function Main() {
               <Card>
                 <CardMedia component={'img'} height='65' image='/contacto.jpg' alt='Imagen' />
                 <CardContent>
-                  <Typography variant='h4' sx={{ textAlign: 'center' }}> Contáctenos </Typography>
+                  <Typography variant='h4' sx={{ textAlign: 'center' }}> Contacto </Typography>
                 </CardContent>
               </Card>
             </Link>
@@ -89,9 +102,9 @@ export default function Main() {
           <Grid item xs={9} md={4}>
             <Link href="/nosotros/historia">
               <Card>
-                <CardMedia component={'img'} height='65' image='/head5.gif' alt='Imagen' />
+                <CardMedia component={'img'} height='65' image='/head5new.gif' alt='Imagen' />
                 <CardContent>
-                  <Typography variant='h4' sx={{ textAlign: 'center' }}> Nuestra historia </Typography>
+                  <Typography variant='h4' sx={{ textAlign: 'center' }}> Historia </Typography>
                 </CardContent>
               </Card>
             </Link>

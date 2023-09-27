@@ -3,8 +3,7 @@
 import Link from 'next/link';
 import { Container, Typography, Stack } from '@mui/material';
 import Footer from '@/app/components/Footer';
-// import Bar from '@/app/components/Bar';
-import Bar from '@/app/components/Test';
+import Bar from '@/app/components/Bar';
 import Box from '@mui/material/Box';
 
 export default function certificadoUnipolar() {

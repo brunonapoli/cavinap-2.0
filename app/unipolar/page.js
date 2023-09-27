@@ -19,7 +19,7 @@ import { datos, titulos, medidas, color } from '../../utils/datosUni';
 export default function unipolar() {
     return (
         <>
-            <Bar posicion={1} />
+            <Bar posicion={1} posicionTabIndicator={64 * 2}/>
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Unipolares </Typography>
                 <Typography variant='h7' paragraph>

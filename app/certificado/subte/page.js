@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 export default function CertSubte() {
     return (
         <>
-            <Bar posicion={4} />
+            <Bar posicion={4} posicionTabIndicator={64 * 5}/>
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}>
                     Certificado Subterráneos

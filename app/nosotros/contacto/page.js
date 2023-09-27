@@ -9,7 +9,7 @@ import EmailIcon from '@mui/icons-material/Email';
 export default function contacto() {
     return (
         <>
-            <Bar posicion={6} />
+            <Bar posicion={6} posicionTabIndicator={64 * 7}/>
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Contacto </Typography>
                 <Typography variant='h5' sx={{ mb: 3 }}>Para mayor informacion nos puede contactar de las siguientes maneras:</Typography>

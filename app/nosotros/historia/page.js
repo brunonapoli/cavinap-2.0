@@ -7,7 +7,7 @@ import { Container, Typography } from '@mui/material';
 export default function historia() {
     return (
         <>
-            <Bar posicion={7} />
+            <Bar posicion={7} posicionTabIndicator={64 * 8}/>
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Historia </Typography>
                 <Typography variant='h6' sx={{ mb: 3 }}>

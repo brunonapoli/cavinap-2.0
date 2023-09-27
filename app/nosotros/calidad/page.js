@@ -7,7 +7,7 @@ import { Container, Typography } from '@mui/material';
 export default function calidad() {
     return (
         <>
-            <Bar posicion={5} />
+            <Bar posicion={5} posicionTabIndicator={64 * 6}/>
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Calidad </Typography>
                 <Typography variant='h5' sx={{ mb: 3 }}> CAVINAP define como política de calidad lo siguiente: </Typography>

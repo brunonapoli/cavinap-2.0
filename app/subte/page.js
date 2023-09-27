@@ -14,7 +14,7 @@ import { Container, Typography, TableBody, Box } from '@mui/material';
 export default function subte() {
     return (
         <>
-            <Bar posicion={2} />
+            <Bar posicion={2} posicionTabIndicator={64 * 3}/>
             <Container sx={{ mt: 3 }}>
                 <Typography variant='h3' sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline' }}> Subterráneos </Typography>
                 <Typography variant='h7' paragraph>
