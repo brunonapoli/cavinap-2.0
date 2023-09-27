@@ -28,7 +28,7 @@ export default function CertSubte() {
                     </Link>
                 </Stack>
                 <Typography variant='h6' paragraph sx={{ textAlign: 'center', mb: 2 }}>
-                    *Click en la imagen para mejor resolución.
+                    *Click en la imagen para una mejor resolución.
                 </Typography>
             </ Container>
             <Footer posicion={'static'} />
