@@ -11,7 +11,7 @@ Página oficial para la fábrica de conductores eléctricos 'Cavinap'.
 >Next.js - Material Ui
 
 ### Preview
-![Screenshot](public/assets/cavinap2.0.png)
+![Screenshot](public/cavinap.png)
 
 ### Autor
 >Napoli Bruno
