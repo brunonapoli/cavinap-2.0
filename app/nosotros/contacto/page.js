@@ -54,13 +54,13 @@ export default function contacto() {
                                         Lunes a Viernes
                                     </Typography>
                                     <Typography variant='h5' sx={{ textAlign: 'center', fontWeight: 'bold' }}>
-                                        08:30 hs. a 12:00 hs.
+                                        08:00 hs. a 12:00 hs.
                                     </Typography>
                                     <Typography variant='h5' sx={{ textAlign: 'center', fontWeight: 'bold' }}>
                                         -
                                     </Typography>
                                     <Typography variant='h5' sx={{ textAlign: 'center', mb: 2, fontWeight: 'bold' }}>
-                                        13:30 hs. a 16:00 hs
+                                        13:00 hs. a 16:00 hs
                                     </Typography>
                                     <Typography variant='h5' sx={{ textAlign: 'center' }}>
                                         Sábados y Feriados:
