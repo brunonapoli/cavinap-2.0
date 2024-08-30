@@ -22,9 +22,9 @@ export default function contacto() {
                                 <Stack direction='column' alignItems='center' gap={1}>
                                     <Typography variant='h5'>
                                         <PhoneIcon sx={{ fontSize: 30, position: 'relative', top: 6, mr: .5 }} />
-                                        Teléfono:
+                                        Celular(solo mensajes):
                                     </Typography>
-                                    <Typography variant='h5' sx={{ fontWeight: 'bold' }}> 4753 - 2919</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: 'bold' }}> 11-3559-5346</Typography>
                                 </Stack>
                             </CardContent>
                         </Card>
