@@ -23,7 +23,7 @@ export default function CertSubte() {
                                 width: { xs: 330, sm: 508, md: 660 }
                             }}
                             alt="Foto del certificado del Subterráneo"
-                            src="/certificadoUnipolar.jpg"
+                            src="/certificadoSubte.jpg"
                         />
                     </Link>
                 </Stack>
